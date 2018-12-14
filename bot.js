@@ -6,17 +6,17 @@ const Discord5 = require("discord.js");
 const Discord6 = require("discord.js");
 const Discord7 = require("discord.js");
 ////////////////////////////////////////////
-const client1 = new Discord1.Client();
-const client2 = new Discord2.Client();
-const client3 = new Discord3.Client();
-const client4 = new Discord4.Client();
-const client5 = new Discord5.Client();
-const client6 = new Discord6.Client();
-const client7 = new Discord7.Client();
+const p1 = new Discord1.client();
+const p2 = new Discord2.client();
+const p3 = new Discord3.client();
+const p4 = new Discord4.client();
+const p5 = new Discord5.client();
+const p6 = new Discord6.client();
+const p7 = new Discord7.client();
 ///////////////////////////////////////////
-client1.on('ready',async () => {
+p1.on('ready',async () => {
     console.log("Starting..");
-    let g = client.guilds.get("504685916023947264");
+    let g = p1.guilds.get("504685916023947264");
     let c = g.channels.get("508293409157677056");
     if(c.type === 'voice') {
     c.join();
@@ -27,9 +27,9 @@ client1.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-client2.on('ready',async () => {
+p2.on('ready',async () => {
     console.log("Starting..");
-    let g = client.guilds.get("504685916023947264");
+    let g = p2.guilds.get("504685916023947264");
     let c = g.channels.get("508293440258179074");
     if(c.type === 'voice') {
     c.join();
@@ -40,9 +40,9 @@ client2.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-client3.on('ready',async () => {
+p3.on('ready',async () => {
     console.log("Starting..");
-    let g = client.guilds.get("504685916023947264");
+    let g = p3.guilds.get("504685916023947264");
     let c = g.channels.get("508293454279999513");
     if(c.type === 'voice') {
     c.join();
@@ -53,9 +53,9 @@ client3.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-client4.on('ready',async () => {
+p4.on('ready',async () => {
     console.log("Starting..");
-    let g = client.guilds.get("504685916023947264");
+    let g = p4.guilds.get("504685916023947264");
     let c = g.channels.get("508293425460936709");
     if(c.type === 'voice') {
     c.join();
@@ -66,9 +66,9 @@ client4.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-client5.on('ready',async () => {
+p5.on('ready',async () => {
     console.log("Starting..");
-    let g = client.guilds.get("504685916023947264");
+    let g = p5.guilds.get("504685916023947264");
     let c = g.channels.get("508299151394734100");
     if(c.type === 'voice') {
     c.join();
@@ -79,9 +79,9 @@ client5.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-client6.on('ready',async () => {
+p6.on('ready',async () => {
     console.log("Starting..");
-    let g = client.guilds.get("504685916023947264");
+    let g = p6.guilds.get("504685916023947264");
     let c = g.channels.get("522515374802075649");
     if(c.type === 'voice') {
     c.join();
@@ -92,9 +92,9 @@ client6.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-client7.on('ready',async () => {
+p7.on('ready',async () => {
     console.log("Starting..");
-    let g = client.guilds.get("504685916023947264");
+    let g = p7.guilds.get("504685916023947264");
     let c = g.channels.get("522518058187620364");
     if(c.type === 'voice') {
     c.join();
@@ -106,10 +106,10 @@ client7.on('ready',async () => {
     }
     });
 ///////////////////////////////////////////////////////
-client1.login(process.env.B1);
-client2.login(process.env.B2);
-client3.login(process.env.B3);
-client4.login(process.env.B4);
-client5.login(process.env.B5);
-client6.login(process.env.B6);
-client7.login(process.env.B7);
+p1.login(process.env.B1);
+p2.login(process.env.B2);
+p3.login(process.env.B3);
+p4.login(process.env.B4);
+p5.login(process.env.B5);
+p6.login(process.env.B6);
+p7.login(process.env.B7);
