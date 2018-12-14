@@ -9,10 +9,10 @@ const Discord7 = require("discord.js");
 const client1 = new Discord1.Client();
 const client2 = new Discord2.Client();
 const client3 = new Discord3.Client();
-const client4 = new Discord3.Client();
-const client5 = new Discord3.Client();
-const client6 = new Discord3.Client();
-const client7 = new Discord3.Client();
+const client4 = new Discord4.Client();
+const client5 = new Discord5.Client();
+const client6 = new Discord6.Client();
+const client7 = new Discord7.Client();
 ///////////////////////////////////////////
 client1.on('ready',async () => {
     console.log("Starting..");
