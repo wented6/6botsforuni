@@ -5,7 +5,7 @@ const D4 = require('discord.js');
 const D5 = require('discord.js');
 const D6 = require('discord.js');
 const D7 = require('discord.js');
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 const p1 = new D1.Client();
 const p2 = new D2.Client();
 const p3 = new D3.Client();
@@ -14,7 +14,7 @@ const p5 = new D5.Client();
 const p6 = new D6.Client();
 const p7 = new D7.Client();
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 p1.on("message", message => {
     console.log("S1");
     let g = client.guilds.get("504685916023947264");
