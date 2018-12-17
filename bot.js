@@ -1,22 +1,23 @@
-const Discord1 = require("discord.js");
-const Discord2 = require("discord.js");
-const Discord3 = require("discord.js");
-const Discord4 = require("discord.js");
-const Discord5 = require("discord.js");
-const Discord6 = require("discord.js");
-const Discord7 = require("discord.js");
-////////////////////////////////////////////
-const p1 = new Discord1.client();
-const p2 = new Discord2.client();
-const p3 = new Discord3.client();
-const p4 = new Discord4.client();
-const p5 = new Discord5.client();
-const p6 = new Discord6.client();
-const p7 = new Discord7.client();
-///////////////////////////////////////////
-p1.on('ready',async () => {
-    console.log("Starting..");
-    let g = p1.guilds.get("504685916023947264");
+const D1 = require('discord.js');
+const D2 = require('discord.js');
+const D3 = require('discord.js');
+const D4 = require('discord.js');
+const D5 = require('discord.js');
+const D6 = require('discord.js');
+const D7 = require('discord.js');
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const p1 = new D1.Client();
+const p2 = new D2.Client();
+const p3 = new D3.Client();
+const p4 = new D4.Client();
+const p5 = new D5.Client();
+const p6 = new D6.Client();
+const p7 = new D7.Client();
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+p1.on("message", message => {
+    console.log("S1");
+    let g = client.guilds.get("504685916023947264");
     let c = g.channels.get("508293409157677056");
     if(c.type === 'voice') {
     c.join();
@@ -27,9 +28,9 @@ p1.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-p2.on('ready',async () => {
-    console.log("Starting..");
-    let g = p2.guilds.get("504685916023947264");
+p2.on("message", message => {
+    console.log("S2");
+    let g = client.guilds.get("504685916023947264");
     let c = g.channels.get("508293440258179074");
     if(c.type === 'voice') {
     c.join();
@@ -40,9 +41,9 @@ p2.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-p3.on('ready',async () => {
-    console.log("Starting..");
-    let g = p3.guilds.get("504685916023947264");
+p3.on("message", message => {
+    console.log("S3");
+    let g = client.guilds.get("504685916023947264");
     let c = g.channels.get("508293454279999513");
     if(c.type === 'voice') {
     c.join();
@@ -53,9 +54,9 @@ p3.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-p4.on('ready',async () => {
-    console.log("Starting..");
-    let g = p4.guilds.get("504685916023947264");
+p4.on("message", message => {
+    console.log("S4");
+    let g = client.guilds.get("504685916023947264");
     let c = g.channels.get("508293425460936709");
     if(c.type === 'voice') {
     c.join();
@@ -66,9 +67,9 @@ p4.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-p5.on('ready',async () => {
-    console.log("Starting..");
-    let g = p5.guilds.get("504685916023947264");
+p5.on("message", message => {
+    console.log("S5");
+    let g = client.guilds.get("504685916023947264");
     let c = g.channels.get("508299151394734100");
     if(c.type === 'voice') {
     c.join();
@@ -79,9 +80,9 @@ p5.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-p6.on('ready',async () => {
-    console.log("Starting..");
-    let g = p6.guilds.get("504685916023947264");
+p6.on("message", message => {
+    console.log("S6");
+    let g = client.guilds.get("504685916023947264");
     let c = g.channels.get("522515374802075649");
     if(c.type === 'voice') {
     c.join();
@@ -92,9 +93,9 @@ p6.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-p7.on('ready',async () => {
-    console.log("Starting..");
-    let g = p7.guilds.get("504685916023947264");
+p7.on("message", message => {
+    console.log("S7");
+    let g = client.guilds.get("504685916023947264");
     let c = g.channels.get("522518058187620364");
     if(c.type === 'voice') {
     c.join();
@@ -105,7 +106,10 @@ p7.on('ready',async () => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
-///////////////////////////////////////////////////////
+
+
+
+
 p1.login(process.env.B1);
 p2.login(process.env.B2);
 p3.login(process.env.B3);
