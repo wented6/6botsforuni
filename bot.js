@@ -5,6 +5,8 @@ const D4 = require('discord.js');
 const D5 = require('discord.js');
 const D6 = require('discord.js');
 const D7 = require('discord.js');
+const D8 = require('discord.js');
+
 
 const p1 = new D1.Client();
 const p2 = new D2.Client();
@@ -13,6 +15,8 @@ const p4 = new D4.Client();
 const p5 = new D5.Client();
 const p6 = new D6.Client();
 const p7 = new D7.Client();
+const p8 = new D8.Client();
+
 
 
 p1.on("message", message => {
@@ -106,6 +110,19 @@ p7.on("message", message => {
     console.log("Failed To Join:\n The Channel Type isn't \"text\"");
     }
     });
+p8.on("message", message => {
+    console.log("S8");
+    let g = client.guilds.get("504685916023947264");
+    let c = g.channels.get("510806482925781032");
+    if(c.type === 'voice') {
+    c.join();
+    setInterval(() => {
+    if(!g.me.voiceChannel) c.join();
+    }, 1);
+    } else {
+    console.log("Failed To Join:\n The Channel Type isn't \"text\"");
+    }
+    });
 
 
 
@@ -117,3 +134,5 @@ p4.login(process.env.B4);
 p5.login(process.env.B5);
 p6.login(process.env.B6);
 p7.login(process.env.B7);
+p8.login(process.env.B8);
+
